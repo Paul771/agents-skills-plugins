@@ -1,0 +1,12 @@
+# Keep repository content byte-identical across platforms.
+# Skills are consumed on macOS, Linux and Windows; CRLF would show up as noise
+# in diffs and break the exact-match examples in the reference docs.
+* text=auto eol=lf
+
+*.py    text eol=lf diff=python
+*.md    text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.sh    text eol=lf
+*.drawio text eol=lf
